@@ -13,6 +13,11 @@ export class ProductDetailComponent implements OnInit {
 
   private comments: Comment[];
 
+  newRating: number = 5;
+  newComment: string = "";
+
+  isCommentHidden = true;
+
   constructor(private routeInfo: ActivatedRoute,
               private  productService: ProductService
               ) { }
@@ -22,6 +27,15 @@ export class ProductDetailComponent implements OnInit {
     /*this.productTitle = this.routeInfo.snapshot.params["prodTitle"];*/
     this.product = this.productService.getProduct(productId);
     this.comments = this.productService.getCommentsForProductId(productId);
+  }
+
+  addComment() {
+    let comment = new Comment(0, this.product.id, new Date().toISOString(), "Mazey", this.newRating, this.newComment);
+    this.comments.unshift(comment);
+
+    this.newComment = null;
+    this.newRating = 5;
+    this.isCommentHidden = true;
   }
 
 }
