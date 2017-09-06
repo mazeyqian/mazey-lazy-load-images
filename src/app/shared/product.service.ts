@@ -28,6 +28,10 @@ export class ProductService {
   constructor() {
   }
 
+  getAllCategories(): string[] {
+    return ["Elec", "Hard", "Book"];
+  }
+
   getProducts(): Product[] {
     return this.products;
   }
