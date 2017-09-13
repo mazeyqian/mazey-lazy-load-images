@@ -12,3 +12,6 @@ I do nothing today.
 
 ### 2017-09-11
 I do nothing today.
+
+### 2017-09-12
+I do nothing today.
