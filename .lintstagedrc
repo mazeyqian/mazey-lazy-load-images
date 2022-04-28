@@ -1,0 +1,7 @@
+{
+    "*.jsx": [
+        "prettier-eslint --write",
+        "eslint --fix",
+        "git add"
+    ]
+}
