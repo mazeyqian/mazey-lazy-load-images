@@ -1,28 +1,59 @@
-# Auction
+# Mazey
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
+[![NPM version][npm-image]][npm-url]
+[![l][l-image]][l-url]
 
-## Development server
+[npm-image]: https://img.shields.io/npm/v/mazey
+[npm-url]: https://npmjs.org/package/mazey
+[l-image]: https://img.shields.io/npm/l/mazey
+[l-url]: https://github.com/mazeyqian/mazey
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Mazey's library for front end.
 
-## Code scaffolding
+## Install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You can get Mazey via [npm](https://www.npmjs.com/package/mazey).
 
-## Build
+```
+npm install mazey --save
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Usage
 
-## Running unit tests
+### Load
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Load JavaScript.
 
-## Running end-to-end tests
+```
+import { loadScript } from 'mazey';
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+loadScript({
+  url: 'http://www.mazey.net/js/plugin/jquery/jquery-2.1.1.min.js',
+  id: 'iamid', // 可选，script 标签 ID，默认无 ID
+  timeout: 5000, // 可选，超时时间，默认 5000
+  isDefer: false, // 可选，defer，默认 false
+})
+  .then(
+    res => {
+      console.log(`加载 JavaScript 成功: ${res}`);
+    }
+  )
+  .catch(
+    err => {
+      console.error(`加载 JavaScript 失败: ${err}`)
+    }
+  );
+```
 
-## Further help
+## Develop
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+# dev
+npm run dev
+
+# build
+npm run build
+
+# documentation
+npm run docs
+```
