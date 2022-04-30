@@ -5,7 +5,7 @@ import { throttle, addInlineStyle } from 'mazey';
 /**
  * @method lazyLoadImages
  * @description Lazey load images.
- * @param {Array} images Data containing images.
+ * @param {Array} images Data contains images.
  * [
     {
       name: 'Example1',
