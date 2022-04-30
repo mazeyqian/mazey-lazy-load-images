@@ -1,4 +1,4 @@
-# Mazey
+# Mazey-Lazy-Load-Images
 
 [![NPM version][npm-image]][npm-url]
 [![l][l-image]][l-url]
@@ -15,7 +15,7 @@ Mazey's library for front end.
 You can get Mazey via [npm](https://www.npmjs.com/package/mazey).
 
 ```
-npm install mazey --save
+npm install mazey-lazy-load-images --save
 ```
 
 ## Usage
