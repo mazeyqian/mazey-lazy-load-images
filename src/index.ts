@@ -88,7 +88,7 @@ export function lazyLoadImages({images = [{ name: '', img: [''] }], container = 
         border-radius: 4px;
       }
     `,
-    id: 'test',
+    id: 'mazey-lazy-load-images-style',
   });
   return true;
 }
