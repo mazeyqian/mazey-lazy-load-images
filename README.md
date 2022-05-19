@@ -24,7 +24,7 @@ npm install mazey-lazy-load-images --save
 import { lazyLoadImages } from 'mazey-lazy-load-images';
 
 lazyLoadImages({
-  images: [ // Data contains images.
+  images: [ // It's data for images.
     {
       name: 'Example1',
       img: [
