@@ -19,11 +19,14 @@ lazyLoadImages({
         'https://i.mazey.net/icon/sizes/200x400.jpg',
         'https://i.mazey.net/icon/sizes/400x200.jpg',
         'https://i.mazey.net/icon/sizes/600x200.jpg',
+        'https://i.mazey.net/icon/sizes/400x200.jpg',
+        'https://i.mazey.net/icon/sizes/400x200.jpg',
       ]
     },
     {
       name: 'Example2',
       img: [
+        'https://i.mazey.net/icon/sizes/800x600.jpg',
         'https://i.mazey.net/icon/sizes/800x600.jpg',
         'https://i.mazey.net/icon/sizes/200x400.jpg',
       ]
