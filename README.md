@@ -1,4 +1,4 @@
-# Mazey Lazy Load Images
+# mazey-lazy-load-images
 
 [![NPM version][npm-image]][npm-url]
 [![l][l-image]][l-url]
@@ -12,7 +12,7 @@ Lazy load images.
 
 ## Install
 
-You can get Mazey-Lazy-Load-Images via [npm](https://www.npmjs.com/package/mazey-lazy-load-images).
+You can get mazey-lazy-load-images via [npm](https://www.npmjs.com/package/mazey-lazy-load-images).
 
 ```
 npm install mazey-lazy-load-images --save
@@ -24,26 +24,29 @@ npm install mazey-lazy-load-images --save
 import { lazyLoadImages } from 'mazey-lazy-load-images';
 
 lazyLoadImages({
-  images: [ // It's data for images.
+  images: [ // Data contains images.
     {
       name: 'Example1',
       img: [
-        'https://i.mazey.net/asset/default/suzumiya-haruhi1.jpg',
-        'https://blog.mazey.net/wp-content/uploads/2021/12/1495120456257031.png',
-        'https://blog.mazey.net/wp-content/uploads/2022/03/2B6D5045-E4CF-4B00-BAD7-8FC93FB9DDFE.png',
-        'https://blog.mazey.net/wp-content/uploads/2022/03/D13A884F-2898-486E-BFA3-D14E3AAF9988.png',
+        'https://i.mazey.net/icon/sizes/600x200.jpg',
+        'https://i.mazey.net/icon/sizes/200x400.jpg',
+        'https://i.mazey.net/icon/sizes/400x200.jpg',
+        'https://i.mazey.net/icon/sizes/600x200.jpg',
+        'https://i.mazey.net/icon/sizes/400x200.jpg',
+        'https://i.mazey.net/icon/sizes/400x200.jpg',
       ]
     },
     {
       name: 'Example2',
       img: [
-        'https://blog.mazey.net/wp-content/uploads/2021/12/EmotionormalBanner-534x228-1.jpg',
-        'https://blog.mazey.net/wp-content/uploads/2022/03/Arkwrights-Cotton-Mills-by-night-1790s.jpg',
+        'https://i.mazey.net/icon/sizes/800x600.jpg',
+        'https://i.mazey.net/icon/sizes/800x600.jpg',
+        'https://i.mazey.net/icon/sizes/200x400.jpg',
       ]
     },
   ],
   container: '.box', // A String can be used by `document.querySelector()`, such as: `.box` or `#entry-content`.
-  defaultImg: 'https://i.mazey.net/asset/default/201909170739.jpg', // Default load image.
+  defaultImg: 'https://i.mazey.net/icon/sizes/200x200.jpg', // Default load image.
 });
 ```
 
@@ -59,13 +62,17 @@ DOM
       </div>
       <div class="m-img">
         
-        <div><img src="https://i.mazey.net/asset/default/suzumiya-haruhi1.jpg" data-src="https://i.mazey.net/asset/default/suzumiya-haruhi1.jpg" class="m-img-item" loading="lazy"></div>
-
-        <div><img src="https://blog.mazey.net/wp-content/uploads/2021/12/1495120456257031.png" data-src="https://blog.mazey.net/wp-content/uploads/2021/12/1495120456257031.png" class="m-img-item" loading="lazy"></div>
-      
-        <div><img src="https://blog.mazey.net/wp-content/uploads/2022/03/2B6D5045-E4CF-4B00-BAD7-8FC93FB9DDFE.png" data-src="https://blog.mazey.net/wp-content/uploads/2022/03/2B6D5045-E4CF-4B00-BAD7-8FC93FB9DDFE.png" class="m-img-item" loading="lazy"></div>
-      
-        <div><img src="https://blog.mazey.net/wp-content/uploads/2022/03/D13A884F-2898-486E-BFA3-D14E3AAF9988.png" data-src="https://blog.mazey.net/wp-content/uploads/2022/03/D13A884F-2898-486E-BFA3-D14E3AAF9988.png" class="m-img-item" loading="lazy"></div>
+      <div><img src="https://i.mazey.net/icon/sizes/600x200.jpg" data-src="https://i.mazey.net/icon/sizes/600x200.jpg" class="m-img-item" loading="lazy"></div>
+    
+      <div><img src="https://i.mazey.net/icon/sizes/200x400.jpg" data-src="https://i.mazey.net/icon/sizes/200x400.jpg" class="m-img-item" loading="lazy"></div>
+    
+      <div><img src="https://i.mazey.net/icon/sizes/400x200.jpg" data-src="https://i.mazey.net/icon/sizes/400x200.jpg" class="m-img-item" loading="lazy"></div>
+    
+      <div><img src="https://i.mazey.net/icon/sizes/600x200.jpg" data-src="https://i.mazey.net/icon/sizes/600x200.jpg" class="m-img-item" loading="lazy"></div>
+    
+      <div><img src="https://i.mazey.net/icon/sizes/400x200.jpg" data-src="https://i.mazey.net/icon/sizes/400x200.jpg" class="m-img-item" loading="lazy"></div>
+    
+      <div><img src="https://i.mazey.net/icon/sizes/400x200.jpg" data-src="https://i.mazey.net/icon/sizes/400x200.jpg" class="m-img-item" loading="lazy"></div>
     
       </div>
     </div>
@@ -76,9 +83,11 @@ DOM
       </div>
       <div class="m-img">
         
-        <div><img src="https://blog.mazey.net/wp-content/uploads/2021/12/EmotionormalBanner-534x228-1.jpg" data-src="https://blog.mazey.net/wp-content/uploads/2021/12/EmotionormalBanner-534x228-1.jpg" class="m-img-item" loading="lazy"></div>
-      
-        <div><img src="https://blog.mazey.net/wp-content/uploads/2022/03/Arkwrights-Cotton-Mills-by-night-1790s.jpg" data-src="https://blog.mazey.net/wp-content/uploads/2022/03/Arkwrights-Cotton-Mills-by-night-1790s.jpg" class="m-img-item" loading="lazy"></div>
+      <div><img src="https://i.mazey.net/icon/sizes/800x600.jpg" data-src="https://i.mazey.net/icon/sizes/800x600.jpg" class="m-img-item" loading="lazy"></div>
+    
+      <div><img src="https://i.mazey.net/icon/sizes/800x600.jpg" data-src="https://i.mazey.net/icon/sizes/800x600.jpg" class="m-img-item" loading="lazy"></div>
+    
+      <div><img src="https://i.mazey.net/icon/sizes/200x400.jpg" data-src="https://i.mazey.net/icon/sizes/200x400.jpg" class="m-img-item" loading="lazy"></div>
     
       </div>
     </div>
@@ -87,7 +96,7 @@ DOM
 </div>
 ```
 
-## Develop
+## Contributing
 
 ```
 # dev
