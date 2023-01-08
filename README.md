@@ -1,4 +1,4 @@
-# Mazey Lazy Load Images
+# mazey-lazy-load-images
 
 [![NPM version][npm-image]][npm-url]
 [![l][l-image]][l-url]
@@ -12,7 +12,7 @@ Lazy load images.
 
 ## Install
 
-You can get Mazey-Lazy-Load-Images via [npm](https://www.npmjs.com/package/mazey-lazy-load-images).
+You can get mazey-lazy-load-images via [npm](https://www.npmjs.com/package/mazey-lazy-load-images).
 
 ```
 npm install mazey-lazy-load-images --save
@@ -87,7 +87,7 @@ DOM
 </div>
 ```
 
-## Develop
+## Contributing
 
 ```
 # dev
