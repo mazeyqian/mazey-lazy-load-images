@@ -65,7 +65,7 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<a href="#mazey-lazy-load-images" id="mazey-lazy-load-images" style="color: inherit; text-decoration: none;">
-					<h1>Mazey-Lazy-Load-Images</h1>
+					<h1>mazey-lazy-load-images</h1>
 				</a>
 				<p><a href="https://npmjs.org/package/mazey-lazy-load-images"><img src="https://img.shields.io/npm/v/mazey-lazy-load-images" alt="NPM version"></a>
 				<a href="https://github.com/mazeyqian/mazey-lazy-load-images"><img src="https://img.shields.io/npm/l/mazey-lazy-load-images" alt="l"></a></p>
@@ -73,35 +73,38 @@
 				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
 					<h2>Install</h2>
 				</a>
-				<p>You can get Mazey-Lazy-Load-Images via <a href="https://www.npmjs.com/package/mazey-lazy-load-images">npm</a>.</p>
+				<p>You can get mazey-lazy-load-images via <a href="https://www.npmjs.com/package/mazey-lazy-load-images">npm</a>.</p>
 				<pre><code>npm install mazey-lazy-<span class="hljs-keyword">load</span>-images --<span class="hljs-keyword">save</span>
 </code></pre>
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h2>Usage</h2>
 				</a>
-				<pre><code>import { lazyLoadImages } from &#x27;mazey-lazy-load-images&#x27;;
+				<pre><code>import { <span class="hljs-attribute">lazyLoadImages } from &#x27;mazey-lazy-load-images&#x27;;
 
 lazyLoadImages({
-  images: [ <span class="hljs-comment">// Data contains images.</span>
+  images</span>: [ // Data contains images.
     {
       name: &#x27;Example1&#x27;,
       img: [
-        &#x27;https://i.mazey.net/asset/default/suzumiya-haruhi1.jpg&#x27;,
-        &#x27;https://blog.mazey.net/wp-content/uploads/<span class="hljs-number">2021/12/14951204</span><span class="hljs-number">56257031</span>.png&#x27;,
-        &#x27;https://blog.mazey.net/wp-content/uploads/<span class="hljs-number">2022/03</span>/2B6D<span class="hljs-number">5045</span>-E4CF-4B00-BAD7-8FC93FB9DDFE.png&#x27;,
-        &#x27;https://blog.mazey.net/wp-content/uploads/<span class="hljs-number">2022/03</span>/D13A884F-<span class="hljs-number">2898-48</span>6E-BFA3-D14E3AAF<span class="hljs-number">9988</span>.png&#x27;,
+        &#x27;https://i<span class="hljs-variable">.mazey</span><span class="hljs-variable">.net</span>/icon/sizes/600x200<span class="hljs-variable">.jpg</span>&#x27;,
+        &#x27;https://i<span class="hljs-variable">.mazey</span><span class="hljs-variable">.net</span>/icon/sizes/200x400<span class="hljs-variable">.jpg</span>&#x27;,
+        &#x27;https://i<span class="hljs-variable">.mazey</span><span class="hljs-variable">.net</span>/icon/sizes/400x200<span class="hljs-variable">.jpg</span>&#x27;,
+        &#x27;https://i<span class="hljs-variable">.mazey</span><span class="hljs-variable">.net</span>/icon/sizes/600x200<span class="hljs-variable">.jpg</span>&#x27;,
+        &#x27;https://i<span class="hljs-variable">.mazey</span><span class="hljs-variable">.net</span>/icon/sizes/400x200<span class="hljs-variable">.jpg</span>&#x27;,
+        &#x27;https://i<span class="hljs-variable">.mazey</span><span class="hljs-variable">.net</span>/icon/sizes/400x200<span class="hljs-variable">.jpg</span>&#x27;,
       ]
     },
     {
       name: &#x27;Example2&#x27;,
       img: [
-        &#x27;https://blog.mazey.net/wp-content/uploads/<span class="hljs-number">2021/12</span>/EmotionormalBanner-534x228-1.jpg&#x27;,
-        &#x27;https://blog.mazey.net/wp-content/uploads/<span class="hljs-number">2022/03</span>/Arkwrights-Cotton-Mills-by-night-<span class="hljs-number">1790</span>s.jpg&#x27;,
+        &#x27;https://i<span class="hljs-variable">.mazey</span><span class="hljs-variable">.net</span>/icon/sizes/800x600<span class="hljs-variable">.jpg</span>&#x27;,
+        &#x27;https://i<span class="hljs-variable">.mazey</span><span class="hljs-variable">.net</span>/icon/sizes/800x600<span class="hljs-variable">.jpg</span>&#x27;,
+        &#x27;https://i<span class="hljs-variable">.mazey</span><span class="hljs-variable">.net</span>/icon/sizes/200x400<span class="hljs-variable">.jpg</span>&#x27;,
       ]
     },
   ],
-  container: &#x27;.box&#x27;, <span class="hljs-comment">// A String can be used by `document.querySelector()`, such as: `.box` or `#entry-content`.</span>
-  defaultImg: &#x27;https://i.mazey.net/asset/default/<span class="hljs-number">201909170739</span>.jpg&#x27;, <span class="hljs-comment">// Default load image.</span>
+  container: &#x27;<span class="hljs-variable">.box</span>&#x27;, // A String can be used by `document<span class="hljs-variable">.querySelector</span>()`, such as: `<span class="hljs-variable">.box</span>` or `#entry-content`.
+  defaultImg: &#x27;https://i<span class="hljs-variable">.mazey</span><span class="hljs-variable">.net</span>/icon/sizes/200x200<span class="hljs-variable">.jpg</span>&#x27;, // Default load image.
 });
 </code></pre>
 				<p>DOM</p>
@@ -114,13 +117,17 @@ lazyLoadImages({
       &lt;/<span class="hljs-keyword">div</span>&gt;
       &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img&quot;</span>&gt;
         
-        &lt;<span class="hljs-keyword">div</span>&gt;&lt;img src=<span class="hljs-string">&quot;https://i.mazey.net/asset/default/suzumiya-haruhi1.jpg&quot;</span> data-src=<span class="hljs-string">&quot;https://i.mazey.net/asset/default/suzumiya-haruhi1.jpg&quot;</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img-item&quot;</span> loading=<span class="hljs-string">&quot;lazy&quot;</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
-
-        &lt;<span class="hljs-keyword">div</span>&gt;&lt;img src=<span class="hljs-string">&quot;https://blog.mazey.net/wp-content/uploads/2021/12/1495120456257031.png&quot;</span> data-src=<span class="hljs-string">&quot;https://blog.mazey.net/wp-content/uploads/2021/12/1495120456257031.png&quot;</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img-item&quot;</span> loading=<span class="hljs-string">&quot;lazy&quot;</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
-      
-        &lt;<span class="hljs-keyword">div</span>&gt;&lt;img src=<span class="hljs-string">&quot;https://blog.mazey.net/wp-content/uploads/2022/03/2B6D5045-E4CF-4B00-BAD7-8FC93FB9DDFE.png&quot;</span> data-src=<span class="hljs-string">&quot;https://blog.mazey.net/wp-content/uploads/2022/03/2B6D5045-E4CF-4B00-BAD7-8FC93FB9DDFE.png&quot;</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img-item&quot;</span> loading=<span class="hljs-string">&quot;lazy&quot;</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
-      
-        &lt;<span class="hljs-keyword">div</span>&gt;&lt;img src=<span class="hljs-string">&quot;https://blog.mazey.net/wp-content/uploads/2022/03/D13A884F-2898-486E-BFA3-D14E3AAF9988.png&quot;</span> data-src=<span class="hljs-string">&quot;https://blog.mazey.net/wp-content/uploads/2022/03/D13A884F-2898-486E-BFA3-D14E3AAF9988.png&quot;</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img-item&quot;</span> loading=<span class="hljs-string">&quot;lazy&quot;</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+      &lt;<span class="hljs-keyword">div</span>&gt;&lt;img src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/600x200.jpg&quot;</span> data-src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/600x200.jpg&quot;</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img-item&quot;</span> loading=<span class="hljs-string">&quot;lazy&quot;</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+    
+      &lt;<span class="hljs-keyword">div</span>&gt;&lt;img src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/200x400.jpg&quot;</span> data-src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/200x400.jpg&quot;</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img-item&quot;</span> loading=<span class="hljs-string">&quot;lazy&quot;</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+    
+      &lt;<span class="hljs-keyword">div</span>&gt;&lt;img src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/400x200.jpg&quot;</span> data-src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/400x200.jpg&quot;</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img-item&quot;</span> loading=<span class="hljs-string">&quot;lazy&quot;</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+    
+      &lt;<span class="hljs-keyword">div</span>&gt;&lt;img src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/600x200.jpg&quot;</span> data-src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/600x200.jpg&quot;</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img-item&quot;</span> loading=<span class="hljs-string">&quot;lazy&quot;</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+    
+      &lt;<span class="hljs-keyword">div</span>&gt;&lt;img src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/400x200.jpg&quot;</span> data-src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/400x200.jpg&quot;</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img-item&quot;</span> loading=<span class="hljs-string">&quot;lazy&quot;</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+    
+      &lt;<span class="hljs-keyword">div</span>&gt;&lt;img src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/400x200.jpg&quot;</span> data-src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/400x200.jpg&quot;</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img-item&quot;</span> loading=<span class="hljs-string">&quot;lazy&quot;</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
     
       &lt;/<span class="hljs-keyword">div</span>&gt;
     &lt;/<span class="hljs-keyword">div</span>&gt;
@@ -131,9 +138,11 @@ lazyLoadImages({
       &lt;/<span class="hljs-keyword">div</span>&gt;
       &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img&quot;</span>&gt;
         
-        &lt;<span class="hljs-keyword">div</span>&gt;&lt;img src=<span class="hljs-string">&quot;https://blog.mazey.net/wp-content/uploads/2021/12/EmotionormalBanner-534x228-1.jpg&quot;</span> data-src=<span class="hljs-string">&quot;https://blog.mazey.net/wp-content/uploads/2021/12/EmotionormalBanner-534x228-1.jpg&quot;</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img-item&quot;</span> loading=<span class="hljs-string">&quot;lazy&quot;</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
-      
-        &lt;<span class="hljs-keyword">div</span>&gt;&lt;img src=<span class="hljs-string">&quot;https://blog.mazey.net/wp-content/uploads/2022/03/Arkwrights-Cotton-Mills-by-night-1790s.jpg&quot;</span> data-src=<span class="hljs-string">&quot;https://blog.mazey.net/wp-content/uploads/2022/03/Arkwrights-Cotton-Mills-by-night-1790s.jpg&quot;</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img-item&quot;</span> loading=<span class="hljs-string">&quot;lazy&quot;</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+      &lt;<span class="hljs-keyword">div</span>&gt;&lt;img src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/800x600.jpg&quot;</span> data-src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/800x600.jpg&quot;</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img-item&quot;</span> loading=<span class="hljs-string">&quot;lazy&quot;</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+    
+      &lt;<span class="hljs-keyword">div</span>&gt;&lt;img src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/800x600.jpg&quot;</span> data-src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/800x600.jpg&quot;</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img-item&quot;</span> loading=<span class="hljs-string">&quot;lazy&quot;</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
+    
+      &lt;<span class="hljs-keyword">div</span>&gt;&lt;img src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/200x400.jpg&quot;</span> data-src=<span class="hljs-string">&quot;https://i.mazey.net/icon/sizes/200x400.jpg&quot;</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">&quot;m-img-item&quot;</span> loading=<span class="hljs-string">&quot;lazy&quot;</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
     
       &lt;/<span class="hljs-keyword">div</span>&gt;
     &lt;/<span class="hljs-keyword">div</span>&gt;
@@ -141,8 +150,8 @@ lazyLoadImages({
   &lt;/<span class="hljs-keyword">div</span>&gt;
 &lt;/<span class="hljs-keyword">div</span>&gt;
 </code></pre>
-				<a href="#develop" id="develop" style="color: inherit; text-decoration: none;">
-					<h2>Develop</h2>
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h2>Contributing</h2>
 				</a>
 				<pre><code><span class="hljs-comment"># dev</span>
 npm <span class="hljs-keyword">run</span><span class="bash"> dev</span>
