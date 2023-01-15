@@ -1,6 +1,6 @@
 {
   "name": "mazey-lazy-load-images",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Lazy load images.",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
@@ -12,7 +12,7 @@
     "test": "jest",
     "docs": "npx typedoc --out docs/ src/",
     "lint:fix": "eslint ./src/index.ts --ext 'ts,tsx' --fix",
-    "preview": "npm run build && npm run docs && npm run test",
+    "preview": "npm run build && npm run test",
     "release": "npm run preview && npm publish"
   },
   "repository": {
